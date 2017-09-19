@@ -11,6 +11,7 @@ void draw()
     {
       Die first = new Die(i, j);
       first.show();
+      first.roll();
     }
   }
 }
@@ -28,7 +29,10 @@ class Die //models one single dice cube
   }
   void roll()
   {
-    //your code here
+    fill(0);
+    textSize(20);
+    text("Total:", 170, 470);
+    fill(255);
   }
   void show()
   {

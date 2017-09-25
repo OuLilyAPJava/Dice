@@ -5,6 +5,7 @@ void setup()
 }
 void draw()
 {
+  background(200);
   int totalNum = 0;
   for (int j = 25; j < 400; j += 70)
   {
@@ -17,12 +18,32 @@ void draw()
       {
          totalNum ++;
       }
+      if(first.two == true)
+      {
+         totalNum += 2;
+      }
+      if(first.three == true)
+      {
+         totalNum += 3;
+      }
+      if(first.four == true)
+      {
+         totalNum += 4;
+      }
+      if(first.five == true)
+      {
+         totalNum += 5;
+      }
+      if(first.six == true)
+      {
+         totalNum += 6;
+      }
     }
     System.out.println(totalNum);
   }
   fill(0);
-  textSize(20);
-  text("Total:", 170, 470);
+  textSize(25);
+  text("Total:" + totalNum, 180, 475);
   fill(255);
 }
 void mousePressed()

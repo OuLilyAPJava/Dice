@@ -39,7 +39,6 @@ void draw()
          totalNum += 6;
       }
     }
-    System.out.println(totalNum);
   }
   fill(0);
   textSize(25);

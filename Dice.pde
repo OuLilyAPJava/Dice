@@ -42,7 +42,7 @@ void draw()
   }
   fill(0);
   textSize(25);
-  text("Total:" + totalNum, 180, 475);
+  text("Total: " + totalNum, 190, 475);
   fill(255);
 }
 void mousePressed()
